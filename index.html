@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Bite — Семейная пиццерия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="rec-badge">● CAM 01 — MAIN STAGE</div>
+        <h1>SUPER BITE</h1>
+        <p class="subtitle">Место, где оживают фантазии, а вкуснейшая пицца подается под живую музыку наших неповторимых аниматроников!</p>
+        <a href="#booking" class="btn">Заказать билет</a>
+    </header>
+
+    <!-- Блок 1: 5 картинок (1 вывеска + 4 фото аниматроников с детьми) -->
+    <div class="container">
+        <h2>Атмосфера нашего ресторана</h2>
+        <div class="gallery-grid">
+            
+            <!-- 1-я картинка: название ресторана -->
+            <div class="gallery-item wide">
+                <img src="restaurant.png" alt="Вывеска ресторана Super Bite">
+                <div class="gallery-caption">Главный вход и вывеска Super Bite</div>
+            </div>
+
+            <!-- 4 картинки: аниматроники с детьми -->
+            <div class="gallery-item">
+                <img src="kids1.png" alt="Аниматроники с детьми 1">
+                <div class="gallery-caption">Праздник в главном зале</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="kids2.png" alt="Аниматроники с детьми 2">
+                <div class="gallery-caption">Игры и конкурсы с гостями</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="kids3.png" alt="Аниматроники с детьми 3">
+                <div class="gallery-caption">Веселье у главной сцены</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="kids4.png" alt="Аниматроники с детьми 4">
+                <div class="gallery-caption">Незабываемые дни рождения</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Блок 2: 4 картинки с персонажами и подписями имен -->
+    <div class="container">
+        <h2>Звезды и персонал ресторана</h2>
+        <div class="animatronics-grid">
+            
+            <!-- 1. Шторм -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="storm.png" alt="Аниматроник Шторм">
+                </div>
+                <div class="card-content">
+                    <span class="role-tag">Бас-гитара • Ведущий шоу</span>
+                    <h3>Шторм</h3>
+                    <p>Харизматичная волчица в строгом черном пиджаке и красной бабочке. Виртуозно играет на бас-гитаре, задавая мощный ритм группе и следя за порядком в зале.</p>
+                </div>
+            </div>
+
+            <!-- 2. Аврора -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="aurora.png" alt="Аниматроник Аврора">
+                </div>
+                <div class="card-content">
+                    <span class="role-tag">Бэк-вокал • Танцы</span>
+                    <h3>Аврора</h3>
+                    <p>Очаровательная белая кошечка в стильной синей кофточке и юбке со звездой. Обожает внимание гостей, танцует на сцене и дарит улыбки каждому ребенку.</p>
+                </div>
+            </div>
+
+            <!-- 3. Лео -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="leo.png" alt="Аниматроник Лео">
+                </div>
+                <div class="card-content">
+                    <span class="role-tag">Соло-гитара • Аниматор</span>
+                    <h3>Лео</h3>
+                    <p>Добродушный лев с пышной гривой и яркими зелеными глазами. Отвечает за зажигательные мелодии, конкурсы и праздничное настроение.</p>
+                </div>
+            </div>
+
+            <!-- 4. Человек в костюме (Наблюдатель) -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="char4.png" alt="Наблюдатель в костюме">
+                </div>
+                <div class="card-content">
+                    <span class="role-tag">Сотрудник в костюме • Охрана</span>
+                    <h3>Наблюдатель</h3>
+                    <p>Специальный сотрудник ресторана в ростовом костюме. Постоянно находится в зале и внимательно следит за детьми ради их полной безопасности.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Блок 3: Бронирование билетов с датой и временем -->
+    <div class="container" id="booking">
+        <h2>Бронирование билетов</h2>
+        <div class="box-section">
+            <form id="ticket-form">
+                <div class="form-group">
+                    <label for="guest-name">Ваше имя:</label>
+                    <input type="text" id="guest-name" placeholder="Например: Алекс" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="visit-date">Дата посещения:</label>
+                        <input type="date" id="visit-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="visit-time">Во сколько (время сеанса):</label>
+                        <select id="visit-time" required>
+                            <option value="12:00 (Утреннее шоу)">12:00 — Утреннее шоу</option>
+                            <option value="14:30 (Дневной концерт)">14:30 — Дневной концерт</option>
+                            <option value="17:00 (Вечерняя программа)">17:00 — Вечерняя программа</option>
+                            <option value="19:30 (Закрытие зала)">19:30 — Финальное шоу дня</option>
+                            <option value="00:00 (Ночная смена)">00:00 — Ночная смена (00:00 - 06:00)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="ticket-type">Выберите тариф:</label>
+                    <select id="ticket-type">
+                        <option value="Дневной пропуск (Шоу + Пицца) — 500 ₽">Дневной пропуск (Шоу + Пицца) — 500 ₽</option>
+                        <option value="VIP-столик прямо у сцены — 1200 ₽">VIP-столик прямо у сцены — 1200 ₽</option>
+                        <option value="Ночная смена охранника — 0 ₽">Ночная смена охранника — 0 ₽</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests-count">Количество гостей:</label>
+                    <input type="number" id="guests-count" min="1" max="10" value="1" required>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Оформить пропуск</button>
+            </form>
+
+            <div id="ticket-result">
+                <h4>ЭЛЕКТРОННЫЙ ПРОПУСК ВЫДАН</h4>
+                <p>Гость: <strong id="res-name"></strong></p>
+                <p>Дата: <strong id="res-date"></strong> | Время: <strong id="res-time"></strong></p>
+                <p>Гостей: <strong id="res-count"></strong> | Тариф: <strong id="res-type"></strong></p>
+                <div class="ticket-code" id="res-code">#SB-0000</div>
+                <p style="font-size: 0.85rem; color: #a8a2b3;">Покажите этот код на входе в пиццерию Super Bite.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок 4: Отзывы -->
+    <div class="container" id="reviews">
+        <h2>Отзывы посетителей</h2>
+        <div class="box-section" style="margin-bottom: 40px;">
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="review-author">Ваше имя:</label>
+                    <input type="text" id="review-author" placeholder="Например: Майк" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-rating">Оценка пиццерии:</label>
+                    <select id="review-rating">
+                        <option value="★★★★★">★★★★★ — Незабываемое шоу!</option>
+                        <option value="★★★★☆">★★★★☆ — Очень круто, но ночью страшновато</option>
+                        <option value="★★★☆☆">★★★☆☆ — Пицца вкусная, но камеры барахлят</option>
+                        <option value="★★☆☆☆">★★☆☆☆ — Слишком громко на сцене</option>
+                        <option value="★☆☆☆☆">★☆☆☆☆ — Я больше не выйду в ночную смену!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-text">Ваш отзыв:</label>
+                    <textarea id="review-text" rows="3" placeholder="Поделитесь впечатлениями о Шторме, Авроре, Лео или нашей пицце..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Оставить отзыв</button>
+            </form>
+        </div>
+
+        <div class="reviews-list" id="reviews-list"></div>
+    </div>
+
+    <footer>
+        <p>© 2026 Super Bite Entertainment. Все права защищены.</p>
+        <p class="warning-text">ВНИМАНИЕ: Администрация не несет ответственности за пропажу вещей или исчезновение посетителей после полуночи.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
